@@ -4,8 +4,8 @@
 STANFORD_NER_DIR=~/stanford-ner-2020-11-17
 GOLD_STANDARD_WIKI=wikipedia-gold.txt
 GOLD_STANDARD_FAN=fanwiki-gold.txt
-GOLD_STANDARD_WIKI2=wikipedia_gold2.txt
-GOLD_STANDARD_FAN2=fanwiki_gold2.txt
+GOLD_STANDARD_WIKI2=wikipedia-gold2.txt
+GOLD_STANDARD_FAN2=fanwiki-gold2.txt
 EVAL_WIKI=wikipedia-eval.txt
 EVAL_FAN=fanwiki-eval.txt
 EVAL_WIKI2=wikipedia-eval2.txt
@@ -19,5 +19,3 @@ java -mx600m -cp "$STANFORD_NER_DIR/stanford-ner.jar" edu.stanford.nlp.ie.crf.CR
 
 echo "Evaluation completed. Results saved in $EVAL_WIKI and $EVAL_FAN."
 echo "Evaluation completed. Results saved in $EVAL_WIKI2 and $EVAL_FAN2."
-cat wikipedia-eval.txt
-cat fanwiki-eval.txt
